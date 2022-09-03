@@ -1,0 +1,23 @@
+ a1,b1=x-1,y
+    if(a1>7 or b1>7 or a1<0 or b1<0):
+        None
+    else:
+        arr.append([a1,b1])
+    a1,b1=x,y+1
+    if(a1>7 or b1>7 or a1<0 or b1<0):
+        None
+    else:
+        arr.append([a1,b1])
+    a1,b1=x,y-1
+    if(a1>7 or b1>7 or a1<0 or b1<0):
+        None
+    else:
+        arr.append([a1,b1])
+
+
+
+
+ for i in range(len(arr)):
+        point=arr[i]
+        board[point[1]][point[0]]=4
+        drawBoxes(board)
